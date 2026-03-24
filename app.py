@@ -13,7 +13,7 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_community.chat_message_histories import ChatMessageHistory
 
 load_dotenv()
-api_key = os.getenv('OPENAI_API_KEY')
+api_key = st.secrets["OPENAI_API_KEY"]
 st.set_page_config(page_title="Ask me from document", page_icon="📄")
 # st.title("Ask me from document")
 
